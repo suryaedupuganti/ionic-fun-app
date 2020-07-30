@@ -20,11 +20,12 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import Avatar from "./components/Avatar/Avatar";
 import Button from "./components/Button/Button";
+import LoginFormScreen from "./screens/LoginFormScreen/LoginFormScreen";
 
 const App: React.FC = () => {
   return (
     <>
-      <Avatar></Avatar>
+      <LoginFormScreen></LoginFormScreen>
       <Button></Button>
     </>
   );

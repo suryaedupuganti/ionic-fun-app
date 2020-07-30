@@ -5,7 +5,7 @@ import { IonButton } from "@ionic/react";
 const Button: React.FC = () => {
   return (
     <>
-      <IonButton slot="start" color="primary">
+      <IonButton className="button" slot="start" color="primary">
         Primary
       </IonButton>{" "}
     </>
