@@ -18,16 +18,24 @@ import "@ionic/react/css/display.css";
 
 /* Theme variables */
 import "./theme/variables.css";
-import Avatar from "./components/Avatar/Avatar";
-import Button from "./components/Button/Button";
-import LoginFormScreen from "./screens/LoginFormScreen/LoginFormScreen";
+// import Avatar from "./components/Avatar/Avatar";
+// import Button from "./components/Button/Button";
+// import LoginFormScreen from "./screens/LoginFormScreen/LoginFormScreen";
+// import { IonMenu } from "@ionic/react";
+import Menu from "./components/Menu/Menu";
+import { IonApp } from "@ionic/react";
+import NewIngredientScreen from "./screens/NewIngredientsScreen/NewIngredientsScreen";
 
 const App: React.FC = () => {
   return (
-    <>
-      <LoginFormScreen></LoginFormScreen>
-      <Button></Button>
-    </>
+    <IonApp>
+      {/* <IonMenu></IonMenu>
+      <Avatar></Avatar>
+      <LoginFormScreen></LoginFormScreen> */}
+      <NewIngredientScreen></NewIngredientScreen>
+
+      <Menu></Menu>
+    </IonApp>
   );
 };
 export default App;

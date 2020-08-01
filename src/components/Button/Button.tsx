@@ -1,12 +1,15 @@
 import React from "react";
 import "./Button.scss";
 import { IonButton } from "@ionic/react";
+import { text } from "ionicons/icons";
 
-const Button: React.FC = () => {
+type ButtonProps = { text: String };
+const Button: React.FC<ButtonProps> = ({ text }) => {
   return (
     <>
       <IonButton className="button" slot="start" color="primary">
-        Primary
+        {" "}
+        {text}
       </IonButton>{" "}
     </>
   );
